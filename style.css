@@ -27,19 +27,24 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: grey;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
   cursor: pointer;
   -webkit-box-shadow: 16px 16px 21px 8px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 16px 16px 21px 8px rgba(34, 60, 80, 0.2);
   box-shadow: 16px 16px 21px 8px rgba(34, 60, 80, 0.2);
 }
+.converter__item a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: grey;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .converter__item:hover {
   transition: all 0.3s ease-in-out;
   background-color: #d587b3;
-  color: white;
   transform: scale(1.1);
+}
+.converter__item a:hover {
+  color: white;
 }
