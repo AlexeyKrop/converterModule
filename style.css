@@ -1,7 +1,7 @@
 body {
   background: linear-gradient(90deg, #cfecd0, #ffc5ca);
 }
-.wrapper {
+.container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
