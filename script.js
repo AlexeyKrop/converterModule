@@ -26,6 +26,13 @@ form.addEventListener("click", (e) => {
       oz.value = t.value * 35.27396194958 * 1000;
       kn.value = t.value * 9.80665 * 1000;
     }
+    if (gr.value !== "") {
+      kg.value = gr.value / 1000;
+      t.value = gr.value / 1000 / 1000;
+      lb.value = gr.value / 453.592;
+      oz.value = gr.value / 28.3495;
+      kn.value = gr.value * 0.00981;
+    }
   }
 });
 const validation = () => {
