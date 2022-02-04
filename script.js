@@ -1,5 +1,6 @@
 "use strict";
 const weightForm = document.getElementById("weight"),
+  button = document.querySelector("button"),
   wrapper = document.querySelector(".wrapper"),
   form = document.querySelector("form"),
   kg = document.querySelector("#kg"),
@@ -57,5 +58,15 @@ const validation = () => {
     input.addEventListener("input", () => {
       input.value = input.value.replace(/[^0-9\.]/g, "");
     });
+  });
+};
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  reset();
+});
+const reset = () => {
+  const inputs = document.querySelectorAll("input");
+  inputs.forEach((input) => {
+    input.value = "";
   });
 };
