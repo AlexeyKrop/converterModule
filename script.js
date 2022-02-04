@@ -16,22 +16,38 @@ form.addEventListener("click", (e) => {
       t.value = kg.value / 1000;
       gr.value = kg.value * 1000;
       lb.value = kg.value * 2.2;
-      oz.value = kg.value * 35.27396194958;
-      kn.value = kg.value * 9.80665;
-    }
-    if (t.value !== "") {
+      oz.value = kg.value * 35.3;
+      kn.value = kg.value * 9.8;
+    } else if (t.value !== "") {
       kg.value = t.value * 1000;
       gr.value = t.value * 1000 * 1000;
-      lb.value = t.value * 2204.62;
-      oz.value = t.value * 35.27396194958 * 1000;
-      kn.value = t.value * 9.80665 * 1000;
-    }
-    if (gr.value !== "") {
+      lb.value = t.value * 2204.6;
+      oz.value = t.value * 35.3 * 1000;
+      kn.value = t.value * 9.8 * 1000;
+    } else if (gr.value !== "") {
       kg.value = gr.value / 1000;
       t.value = gr.value / 1000 / 1000;
-      lb.value = gr.value / 453.592;
-      oz.value = gr.value / 28.3495;
+      lb.value = gr.value / 453.6;
+      oz.value = gr.value / 28.35;
       kn.value = gr.value * 0.00981;
+    } else if (lb.value !== "") {
+      kg.value = lb.value / 2.2;
+      t.value = lb.value / 2204.6;
+      gr.value = lb.value * 453.6;
+      oz.value = lb.value * 16;
+      kn.value = lb.value * 4.44822;
+    } else if (oz.value !== "") {
+      kg.value = oz.value / 35.274;
+      t.value = oz.value * 28.34 * 10e-7;
+      gr.value = oz.value * 28.34;
+      lb.value = oz.value / 16;
+      kn.value = oz.value / 3.57142;
+    } else if (kn.value !== "") {
+      kg.value = kn.value / 9.8;
+      t.value = kn.value / 9.8 / 1000;
+      gr.value = kn.value / 0.00981;
+      lb.value = kn.value / 4.45;
+      oz.value = kn.value * 3.59694;
     }
   }
 });
