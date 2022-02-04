@@ -33,6 +33,11 @@ body {
   box-shadow: 16px 16px 21px 8px rgba(34, 60, 80, 0.2);
 }
 .converter__item a {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: grey;
   font-size: 18px;

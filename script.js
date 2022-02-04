@@ -17,14 +17,14 @@ form.addEventListener("click", (e) => {
       gr.value = kg.value * 1000;
       lb.value = kg.value * 2.2;
       oz.value = kg.value * 35.27396194958;
-      kn.value = kg.value * 101.9715999814636;
+      kn.value = kg.value * 9.80665;
     }
     if (t.value !== "") {
       kg.value = t.value * 1000;
-      gr.value = kg.value * 1000;
-      lb.value = kg.value * 2.2;
-      oz.value = kg.value * 35.27396194958;
-      kn.value = kg.value * 101.9715999814636;
+      gr.value = t.value * 1000 * 1000;
+      lb.value = t.value * 2204.62;
+      oz.value = t.value * 35.27396194958 * 1000;
+      kn.value = t.value * 9.80665 * 1000;
     }
   }
 });
