@@ -31,12 +31,12 @@ form.addEventListener("click", (e) => {
       stl.value = l.value * 66.667;
       pt.value = l.value * 1.76;
       gal.value = l.value * 0.22;
-    } else if (lbGal.value !== "") {
-      kgm.value = lbGal.value * 119.826426627972;
-      kgsm.value = lbGal.value * 0.000119826427;
-      kgl.value = lbGal.value * 0.119826427;
-      gsm.value = lbGal.value * 0.119826427;
-      ozGal.value = lbGal.value * 15.999999810023;
+    } else if (stl.value !== "") {
+      kbm.value = stl.value * 0.00001;
+      kbsm.value = stl.value * 15;
+      l.value = stl.value * 0.015;
+      pt.value = stl.value * 0.026;
+      gal.value = stl.value * 0.003;
     } else if (kgl.value !== "") {
       kgm.value = kgl.value * 1000;
       kgsm.value = kgl.value / 1000;
