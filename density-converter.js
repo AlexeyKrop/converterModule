@@ -31,12 +31,12 @@ form.addEventListener("click", (e) => {
       kgl.value = gsm.value * 1000;
       lbGal.value = gsm.value * 8.3454045;
       ozGal.value = gsm.value * 133.52647;
-    } else if (inch.value !== "") {
-      km.value = inch.value / 39370.1;
-      m.value = inch.value / 39.3701;
-      mm.value = inch.value / 0.03937;
-      mile.value = inch.value / 63360;
-      yard.value = inch.value / 36;
+    } else if (lbGal.value !== "") {
+      kgm.value = lbGal.value * 119.826426627972;
+      kgsm.value = lbGal.value * 0.000119826427;
+      kgl.value = lbGal.value * 0.119826427;
+      gsm.value = lbGal.value * 0.119826427;
+      ozGal.value = lbGal.value * 15.999999810023;
     } else if (mile.value !== "") {
       km.value = mile.value / 1.6;
       m.value = mile.value / 1.6 / 1000;
