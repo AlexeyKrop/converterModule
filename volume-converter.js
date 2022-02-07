@@ -44,11 +44,11 @@ form.addEventListener("click", (e) => {
       stl.value = pt.value * 37.884;
       gal.value = pt.value * 0.125;
     } else if (gal.value !== "") {
-      kbm.value = gal.value * 7.489151776423;
-      kbsm.value = gal.value * 0.000007489152;
-      l.value = gal.value * 0.007489152;
-      stl.value = gal.value * 0.007489152;
-      pt.value = gal.value * 0.062500002802;
+      kbm.value = gal.value * 0.005;
+      kbsm.value = gal.value * 4546.095;
+      l.value = gal.value * 4.546;
+      stl.value = gal.value * 303.073;
+      pt.value = gal.value * 8;
     }
   }
 });
