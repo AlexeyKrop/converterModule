@@ -37,18 +37,18 @@ form.addEventListener("click", (e) => {
       kgl.value = lbGal.value * 0.119826427;
       gsm.value = lbGal.value * 0.119826427;
       ozGal.value = lbGal.value * 15.999999810023;
-    } else if (mile.value !== "") {
-      km.value = mile.value / 1.6;
-      m.value = mile.value / 1.6 / 1000;
-      mm.value = mile.value / 1.6 / 1000 / 1000;
-      inch.value = mile.value * 63360;
-      yard.value = mile.value * 1760;
-    } else if (yard.value !== "") {
-      km.value = yard.value / 1093.613888889;
-      m.value = (yard.value * 1000) / 1093.613888889;
-      mm.value = (yard.value * 1000 * 1000) / 1093.613888889;
-      inch.value = yard.value * 36;
-      mile.value = yard.value / 1760.4;
+    } else if (kgl.value !== "") {
+      kgm.value = kgl.value * 1000;
+      kgsm.value = kgl.value / 1000;
+      gsm.value = kgl.value;
+      kgl.value = kgl.value * 8.3454045;
+      ozGal.value = kgl.value * 133.52647;
+    } else if (ozGal.value !== "") {
+      kgm.value = ozGal.value * 7.489151776423;
+      kgsm.value = ozGal.value * 0.000007489152;
+      gsm.value = ozGal.value * 0.007489152;
+      kgl.value = ozGal.value * 0.007489152;
+      lbGal.value = ozGal.value * 0.062500002802;
     }
   }
 });
