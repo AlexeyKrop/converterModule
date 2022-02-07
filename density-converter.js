@@ -25,12 +25,12 @@ form.addEventListener("click", (e) => {
       gsm.value = kgsm.value * 1000;
       lbGal.value = kgsm.value * 8345.4045;
       ozGal.value = kgsm.value * 133526.47;
-    } else if (mm.value !== "") {
-      km.value = mm.value / 1000 / 100;
-      m.value = mm.value / 1000;
-      inch.value = mm.value * 25.4;
-      mile.value = mm.value / 100 / 1000 / 1.6;
-      yard.value = mm.value * 914.4;
+    } else if (gsm.value !== "") {
+      kgm.value = gsm.value * 1000;
+      kgsm.value = gsm.value / 1000;
+      kgl.value = gsm.value * 1000;
+      lbGal.value = gsm.value * 8.3454045;
+      ozGal.value = gsm.value * 133.52647;
     } else if (inch.value !== "") {
       km.value = inch.value / 39370.1;
       m.value = inch.value / 39.3701;
