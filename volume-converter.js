@@ -13,24 +13,24 @@ form.addEventListener("click", (e) => {
   const target = e.target;
   if (!target.matches("input")) {
     validation();
-    if (kgm.value !== "") {
-      kgsm.value = kgm.value / 1000000;
-      kgl.value = kgm.value / 1000;
-      gsm.value = kgm.value / 1000;
-      lbGal.value = kgm.value * 0.0083454045;
-      ozGal.value = kgm.value * 0.133526479;
-    } else if (kgsm.value !== "") {
-      kgm.value = kgsm.value * 1000000;
-      kgl.value = kgsm.value * 1000;
-      gsm.value = kgsm.value * 1000;
-      lbGal.value = kgsm.value * 8345.4045;
-      ozGal.value = kgsm.value * 133526.47;
-    } else if (gsm.value !== "") {
-      kgm.value = gsm.value * 1000;
-      kgsm.value = gsm.value / 1000;
-      kgl.value = gsm.value * 1000;
-      lbGal.value = gsm.value * 8.3454045;
-      ozGal.value = gsm.value * 133.52647;
+    if (kbm.value !== "") {
+      kbsm.value = kbm.value * 1000000;
+      l.value = kbm.value * 1000;
+      stl.value = kbm.value * 66666.667;
+      pt.value = kbm.value * 1759.75;
+      gal.value = kbm.value * 219.969;
+    } else if (kbsm.value !== "") {
+      kbm.value = kbsm.value / 1000000;
+      l.value = kbsm.value / 1000;
+      stl.value = kbsm.value * 0.067;
+      pt.value = kbsm.value * 0.002;
+      gal.value = kbsm.value * 0.0002;
+    } else if (l.value !== "") {
+      kbm.value = l.value * 0.001;
+      kbsm.value = l.value * 1000;
+      stl.value = l.value * 66.667;
+      pt.value = l.value * 1.76;
+      gal.value = l.value * 0.22;
     } else if (lbGal.value !== "") {
       kgm.value = lbGal.value * 119.826426627972;
       kgsm.value = lbGal.value * 0.000119826427;
