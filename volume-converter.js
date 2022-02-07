@@ -37,18 +37,18 @@ form.addEventListener("click", (e) => {
       l.value = stl.value * 0.015;
       pt.value = stl.value * 0.026;
       gal.value = stl.value * 0.003;
-    } else if (kgl.value !== "") {
-      kgm.value = kgl.value * 1000;
-      kgsm.value = kgl.value / 1000;
-      gsm.value = kgl.value;
-      kgl.value = kgl.value * 8.3454045;
-      ozGal.value = kgl.value * 133.52647;
-    } else if (ozGal.value !== "") {
-      kgm.value = ozGal.value * 7.489151776423;
-      kgsm.value = ozGal.value * 0.000007489152;
-      gsm.value = ozGal.value * 0.007489152;
-      kgl.value = ozGal.value * 0.007489152;
-      lbGal.value = ozGal.value * 0.062500002802;
+    } else if (pt.value !== "") {
+      kbm.value = pt.value * 0.001;
+      kbsm.value = pt.value * 568;
+      l.value = pt.value * 0.568;
+      stl.value = pt.value * 37.884;
+      gal.value = pt.value * 0.125;
+    } else if (gal.value !== "") {
+      kbm.value = gal.value * 7.489151776423;
+      kbsm.value = gal.value * 0.000007489152;
+      l.value = gal.value * 0.007489152;
+      stl.value = gal.value * 0.007489152;
+      pt.value = gal.value * 0.062500002802;
     }
   }
 });
