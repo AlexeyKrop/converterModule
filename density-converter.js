@@ -3,22 +3,22 @@ const weightForm = document.getElementById("weight"),
   button = document.querySelector("button"),
   wrapper = document.querySelector(".wrapper"),
   form = document.querySelector("form"),
-  km = document.querySelector("#km"),
-  m = document.querySelector("#m"),
-  mm = document.querySelector("#mm"),
-  inch = document.querySelector("#in"),
-  mile = document.querySelector("#mi"),
-  yard = document.querySelector("#yd");
+  kgm = document.querySelector("#kgm"),
+  kgsm = document.querySelector("#kgsm"),
+  kgl = document.querySelector("#kgl"),
+  gsm = document.querySelector("#gsm"),
+  lbGal = document.querySelector("#lb-gal"),
+  ozGal = document.querySelector("#oz-gal");
 form.addEventListener("click", (e) => {
   const target = e.target;
   if (!target.matches("input")) {
     validation();
-    if (km.value !== "") {
-      m.value = km.value * 1000;
-      mm.value = km.value * 1000000;
-      inch.value = km.value / 39370.1;
-      mile.value = km.value / 1.6;
-      yard.value = km.value / 1093.613888889;
+    if (kgm.value !== "") {
+      kgsm.value = kgm.value / 1000000;
+      kgl.value = kgm.value / 1000;
+      gsm.value = kgm.value / 1000;
+      lbGal.value = kgm.value * 0.0083454045;
+      ozGal.value = kgm.value * 0.133526479;
     } else if (m.value !== "") {
       km.value = m.value / 1000;
       mm.value = m.value / 1000;
