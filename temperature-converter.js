@@ -12,8 +12,8 @@ form.addEventListener("click", (e) => {
   if (!target.matches("input")) {
     validation();
     if (c.value !== "") {
-      f.value = c.value * 33.8;
-      k.value = c.value * 274.15;
+      f.value = c.value * 1.8 + 32;
+      k.value = +c.value + 273.15;
       re.value = c.value * 0.8;
     } else if (m.value !== "") {
       km.value = m.value / 1000;
