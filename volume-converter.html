@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="weight.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="name" class="form" id="weight">
+      <div class="wrapper wrapper-weight">
+        <ul class="weight__list list">
+          <li class="weight__item item">
+            <input type="text" class="weight__input input" id="kbm" />
+            <p class="weight__description description">Кубический метр м3</p>
+          </li>
+          <li class="weight__item item">
+            <input type="text" class="weight__input input" id="kbsm" />
+            <p class="weight__description description">
+              Кубический сантиметр см3
+            </p>
+          </li>
+          <li class="weight__item item">
+            <input type="text" class="weight__input input" id="l" />
+            <p class="weight__description description">Литр л</p>
+          </li>
+          <li class="weight__item item">
+            <input type="text" class="weight__input input" id="stl" />
+            <p class="weight__description description">Столовая ложка</p>
+          </li>
+          <li class="weight__item item">
+            <input type="text" class="weight__input input" id="pt" />
+            <p class="weight__description description">Пинта pt</p>
+          </li>
+          <li class="weight__item item">
+            <input type="text" class="weight__input input" id="gal" />
+            <p class="weight__description description">Галлон gal</p>
+          </li>
+        </ul>
+        <button class="reset">Сбросить</button>
+      </div>
+    </form>
+    <script src="./volume-converter.js"></script>
+  </body>
+</html>
