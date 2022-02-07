@@ -11,12 +11,10 @@ form.addEventListener("click", (e) => {
   const target = e.target;
   if (!target.matches("input")) {
     validation();
-    if (km.value !== "") {
-      m.value = km.value * 1000;
-      mm.value = km.value * 1000000;
-      inch.value = km.value / 39370.1;
-      mile.value = km.value / 1.6;
-      yard.value = km.value / 1093.613888889;
+    if (c.value !== "") {
+      f.value = c.value * 33.8;
+      k.value = c.value * 274.15;
+      re.value = c.value * 0.8;
     } else if (m.value !== "") {
       km.value = m.value / 1000;
       mm.value = m.value / 1000;
