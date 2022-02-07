@@ -16,40 +16,40 @@ form.addEventListener("click", (e) => {
     if (km.value !== "") {
       m.value = km.value * 1000;
       mm.value = km.value * 1000000;
-      inch.value = km.value * 39370.1;
+      inch.value = km.value / 39370.1;
       mile.value = km.value / 1.6;
-      yard.value = km.value * 1093.613888889;
-    // } else if (t.value !== "") {
-    //   kg.value = t.value * 1000;
-    //   gr.value = t.value * 1000 * 1000;
-    //   lb.value = t.value * 2204.6;
-    //   oz.value = t.value * 35.3 * 1000;
-    //   kn.value = t.value * 9.8 * 1000;
-    // } else if (gr.value !== "") {
-    //   kg.value = gr.value / 1000;
-    //   t.value = gr.value / 1000 / 1000;
-    //   lb.value = gr.value / 453.6;
-    //   oz.value = gr.value / 28.35;
-    //   kn.value = gr.value * 0.00981;
-    // } else if (lb.value !== "") {
-    //   kg.value = lb.value / 2.2;
-    //   t.value = lb.value / 2204.6;
-    //   gr.value = lb.value * 453.6;
-    //   oz.value = lb.value * 16;
-    //   kn.value = lb.value * 4.44822;
-    // } else if (oz.value !== "") {
-    //   kg.value = oz.value / 35.274;
-    //   t.value = oz.value * 28.34 * 10e-7;
-    //   gr.value = oz.value * 28.34;
-    //   lb.value = oz.value / 16;
-    //   kn.value = oz.value / 3.57142;
-    // } else if (kn.value !== "") {
-    //   kg.value = kn.value / 9.8;
-    //   t.value = kn.value / 9.8 / 1000;
-    //   gr.value = kn.value / 0.00981;
-    //   lb.value = kn.value / 4.45;
-    //   oz.value = kn.value * 3.59694;
-    // }
+      yard.value = km.value / 1093.613888889;
+    } else if (m.value !== "") {
+      km.value = m.value / 1000;
+      mm.value = m.value / 1000;
+      inch.value = (m.value * 1000) / 39370.1;
+      mile.value = (m.value * 1000) / 1.6;
+      yard.value = (m.value * 1000) / 1093.613888889;
+    } else if (mm.value !== "") {
+      km.value = mm.value / 1000 / 100;
+      m.value = mm.value / 1000;
+      inch.value = mm.value * 25.4;
+      mile.value = mm.value / 100 / 1000 / 1.6;
+      yard.value = mm.value * 914.4;
+    } else if (inch.value !== "") {
+      km.value = inch.value / 39370.1;
+      m.value = inch.value / 39.3701;
+      mm.value = inch.value / 0.03937;
+      mile.value = inch.value / 63360;
+      yard.value = inch.value / 36;
+    } else if (mile.value !== "") {
+      km.value = mile.value / 1.6;
+      m.value = mile.value / 1.6 / 1000;
+      mm.value = mile.value / 1.6 / 1000 / 1000;
+      inch.value = mile.value * 63360;
+      yard.value = mile.value * 1760;
+    } else if (yard.value !== "") {
+      km.value = yard.value / 1093.613888889;
+      m.value = (yard.value * 1000) / 1093.613888889;
+      mm.value = (yard.value * 1000 * 1000) / 1093.613888889;
+      inch.value = yard.value * 36;
+      mile.value = yard.value / 1760.4;
+    }
   }
 });
 const validation = () => {
