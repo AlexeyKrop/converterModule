@@ -3,12 +3,10 @@ const weightForm = document.getElementById("weight"),
   button = document.querySelector("button"),
   wrapper = document.querySelector(".wrapper"),
   form = document.querySelector("form"),
-  km = document.querySelector("#km"),
-  m = document.querySelector("#m"),
-  mm = document.querySelector("#mm"),
-  inch = document.querySelector("#in"),
-  mile = document.querySelector("#mi"),
-  yard = document.querySelector("#yd");
+  c = document.querySelector("#C"),
+  f = document.querySelector("#F"),
+  k = document.querySelector("#K"),
+  re = document.querySelector("#Re");
 form.addEventListener("click", (e) => {
   const target = e.target;
   if (!target.matches("input")) {
