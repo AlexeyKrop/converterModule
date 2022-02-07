@@ -15,36 +15,18 @@ form.addEventListener("click", (e) => {
       f.value = c.value * 1.8 + 32;
       k.value = +c.value + 273.15;
       re.value = c.value * 0.8;
-    } else if (m.value !== "") {
-      km.value = m.value / 1000;
-      mm.value = m.value / 1000;
-      inch.value = (m.value * 1000) / 39370.1;
-      mile.value = (m.value * 1000) / 1.6;
-      yard.value = (m.value * 1000) / 1093.613888889;
-    } else if (mm.value !== "") {
-      km.value = mm.value / 1000 / 100;
-      m.value = mm.value / 1000;
-      inch.value = mm.value * 25.4;
-      mile.value = mm.value / 100 / 1000 / 1.6;
-      yard.value = mm.value * 914.4;
-    } else if (inch.value !== "") {
-      km.value = inch.value / 39370.1;
-      m.value = inch.value / 39.3701;
-      mm.value = inch.value / 0.03937;
-      mile.value = inch.value / 63360;
-      yard.value = inch.value / 36;
-    } else if (mile.value !== "") {
-      km.value = mile.value / 1.6;
-      m.value = mile.value / 1.6 / 1000;
-      mm.value = mile.value / 1.6 / 1000 / 1000;
-      inch.value = mile.value * 63360;
-      yard.value = mile.value * 1760;
-    } else if (yard.value !== "") {
-      km.value = yard.value / 1093.613888889;
-      m.value = (yard.value * 1000) / 1093.613888889;
-      mm.value = (yard.value * 1000 * 1000) / 1093.613888889;
-      inch.value = yard.value * 36;
-      mile.value = yard.value / 1760.4;
+    } else if (f.value !== "") {
+      c.value = (f.value - 32) / 1.8;
+      k.value = (f.value - 32) / 1.8 + 273.15;
+      re.value = ((f.value - 32) / 1.8) * 0.8;
+    } else if (k.value !== "") {
+      c.value = k.value - 273.15;
+      f.value = (k.value - 273.15) * 1.8 + 32;
+      re.value = (k.value - 273.15) * 0.8;
+    } else if (re.value !== "") {
+      c.value = re.value / 0.8;
+      f.value = (re.value / 0.8) * 1.8 + 32;
+      k.value = re.value / 0.8 + 273.15;
     }
   }
 });
